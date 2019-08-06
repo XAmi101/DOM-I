@@ -53,7 +53,6 @@ let navbar = document.querySelectorAll("a")
 
 navbar.forEach(function(item, i){
    item.textContent = anchor[`nav-item-${i+1}`]
-
   });
 
   let topHeader = document.querySelector("h1");
@@ -80,10 +79,9 @@ contentHeader.forEach((index, i) => contentHeader[i].textContent = siteContent['
 
 contentHeader.forEach(item => item.style.color = "green");
 
-let newNava = document.createElement("a");
- newNava.textContent = "FAQ";
- newNava.style.color = "green";
+let newNav = document.createElement("a");
  nav.append(newNava);
 
 let contentFooter = document.querySelector("footer p");
 contentFooter.textContent = siteContent["footer"]["copyright"];
+//
